@@ -35,7 +35,7 @@ Working directory is usually the **parent directory** of pace
 #### Install dependencies 
 
 required packages (via sudo apt install): python-gevent,python3-dev,python-socksipy,flex,bison,libgmp-dev,libssl-dev
-   ```
+    ```bash
     pip install greenlet
     pip install greenlet --upgrade
     pip install gevent
@@ -49,7 +49,7 @@ required packages (via sudo apt install): python-gevent,python3-dev,python-socks
 
 
 + pbc (in this demo version, we include pbc in the repository just in case)
-    ```
+    ```bash
     wget https://crypto.stanford.edu/pbc/files/pbc-0.5.14.tar.gz
     tar -xvf pbc-0.5.14.tar.gz
     cd pbc-0.5.14
@@ -59,7 +59,7 @@ required packages (via sudo apt install): python-gevent,python3-dev,python-socks
     ```
 
 charm (in this demo version, we include charm in the repository as some charm versions are not compatible with our codebase)
-    ```
+    ```bash
     sudo apt-get install python3-dev
     git clone https://github.com/JHUISI/charm.git 
     cd charm
@@ -71,23 +71,23 @@ charm (in this demo version, we include charm in the repository as some charm ve
 
 Generate the keys
 + Threshold PRF Keys (used for common coins)
-    ```
+    ```bash
     python -m pace.commoncoin.prf_generate_keys N t+1 > thsig[N]_[t].keys
     example: python -m pace.commoncoin.prf_generate_keys 4 2 > thsig4_1.keys
     ```
 + For version = 5 and 7, the threshold t+1 should be replacd with 2*t+1
-    ```
+    ```bash
     example: python -m pace.commoncoin.prf_generate_keys 4 3 > thsig4_1.keys
     ```
 
 + ECDSA Keys
-    ```
+    ```bash
     python -m pace.ecdsa.generate_keys_ecdsa N > ecdsa[t].keys
     example: python -m pace.ecdsa.generate_keys_ecdsa 4 > ecdsa1.keys
     ```
 
 + Threshold Encryption Keys
-    ```
+    ```bash
     python -m pace.threshenc.generate_keys N t+1 > thenc[N]_[t].keys
     example: python -m pace.threshenc.generate_keys 4 2 > thenc4_1.keys
     ```
