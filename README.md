@@ -34,8 +34,8 @@ Working directory is usually the **parent directory** of pace
 
 #### Install dependencies 
 
-required packages (via sudo apt install): python-gevent,python3-dev,python-socksipy,flex,bison,libgmp-dev,libssl-dev
-    ```bash
++ required packages (via sudo apt install): python-gevent,python3-dev,python-socksipy,flex,bison,libgmp-dev,libssl-dev
+```
     pip install greenlet
     pip install greenlet --upgrade
     pip install gevent
@@ -45,11 +45,11 @@ required packages (via sudo apt install): python-gevent,python3-dev,python-socks
     pip install ecdsa
     pip install zfec
     pip install gipc
-    ```
+```
 
-
-+ pbc (in this demo version, we include pbc in the repository just in case)
-    ```bash
++ Install pbc 
+(in this demo version, we include pbc in the repository just in case)
+```bash
     wget https://crypto.stanford.edu/pbc/files/pbc-0.5.14.tar.gz
     tar -xvf pbc-0.5.14.tar.gz
     cd pbc-0.5.14
@@ -58,7 +58,7 @@ required packages (via sudo apt install): python-gevent,python3-dev,python-socks
     export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
     ```
 
-charm (in this demo version, we include charm in the repository as some charm versions are not compatible with our codebase)
++ charm (in this demo version, we include charm in the repository as some charm versions are not compatible with our codebase)
     ```bash
     sudo apt-get install python3-dev
     git clone https://github.com/JHUISI/charm.git 
