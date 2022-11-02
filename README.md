@@ -49,7 +49,7 @@ Working directory is usually the **parent directory** of pace
 
 + Install pbc 
 (in this demo version, we include pbc in the repository just in case)
-```bash
+    ```bash
     wget https://crypto.stanford.edu/pbc/files/pbc-0.5.14.tar.gz
     tar -xvf pbc-0.5.14.tar.gz
     cd pbc-0.5.14
