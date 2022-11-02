@@ -1,28 +1,27 @@
 # Pace Reposity
 
-PACE: Asynchronous fault-tolerant protocols. 
-This reposity is based on HoneyBadgerBFT and BEAT
-HoneyBadgerBFT: https://github.com/amiller/HoneyBadgerBFT
-BEAT: https://github.com/fififish/beat
+- PACE: Asynchronous fault-tolerant protocols. 
+- This reposity is based on HoneyBadgerBFT and BEAT
+  - HoneyBadgerBFT: https://github.com/amiller/HoneyBadgerBFT
+  - BEAT: https://github.com/fififish/beat
 
-This is an older version based on Python 2.7. 
-We are currently working on a new library using Golang. 
+- This is an older version based on Python 2.7. We are currently working on a new library using Golang. 
 
-Please cite the following paper for this work:
+- Please cite the following paper for this work:
 
-Haibin Zhang and Sisi Duan. PACE: Fully Parallelizable Asynchronous BFT from Reproposable Byzantine Agreement. CCS 2022. 
+  - Haibin Zhang and Sisi Duan. PACE: Fully Parallelizable Asynchronous BFT from Reproposable Byzantine Agreement. CCS 2022. 
 
 ### Protocols
 Eight protocols are included in this repo
 
-version = 1: BEAT0 (MMR) - not live
-version = 2: ACE (Pillar)
-version = 3: PACE (Pisa, a RABA version of Pillar)
-version = 4: BEAT-Cobalt (Cobalt ABA)
-version = 5：ACE (Crain20 algorithm 2 with high-threshold common coin)
-version = 6: ACE (Crain20 algorithm 1 with low-threhsold common coin - weak coin in the original paper)
-version = 7：PACE (RABA protocol based on Crain20 (algorithm 2 with high-threshold common coin))
-version = 8: PACE (RABA protocol based on Crain20 (algorithm 1 with low-threhsold common coin - weak coin in the original paper))
++ version = 1: BEAT0 (MMR) - not live
++ version = 2: ACE (Pillar)
++ version = 3: PACE (Pisa, a RABA version of Pillar)
++ version = 4: BEAT-Cobalt (Cobalt ABA)
++ version = 5：ACE (Crain20 algorithm 2 with high-threshold common coin)
++ version = 6: ACE (Crain20 algorithm 1 with low-threhsold common coin - weak coin in the original paper)
++ version = 7：PACE (RABA protocol based on Crain20 (algorithm 2 with high-threshold common coin))
++ version = 8: PACE (RABA protocol based on Crain20 (algorithm 1 with low-threhsold common coin - weak coin in the original paper))
 
 ### Installation && How to run the code
 
@@ -36,15 +35,15 @@ Working directory is usually the **parent directory** of pace
 #### Install dependencies 
 
 required packages (via sudo apt install): python-gevent,python3-dev,python-socksipy,flex,bison,libgmp-dev,libssl-dev
-pip install greenlet
-pip install greenlet --upgrade
-pip install gevent
-pip install --upgrade setuptools
-pip install pycrypto
-pip install pycryptodomex 
-pip install ecdsa
-pip install zfec
-pip install gipc
+    pip install greenlet
+    pip install greenlet --upgrade
+    pip install gevent
+    pip install --upgrade setuptools
+    pip install pycrypto
+    pip install pycryptodomex 
+    pip install ecdsa
+    pip install zfec
+    pip install gipc
 
 
 pbc (in this demo version, we include pbc in the repository just in case)
