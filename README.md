@@ -1,7 +1,7 @@
 # Pace Repository
 
 - PACE: Asynchronous fault-tolerant protocols. 
-- This reposity is based on HoneyBadgerBFT and BEAT
+- This repository is based on HoneyBadgerBFT and BEAT
   - HoneyBadgerBFT: https://github.com/amiller/HoneyBadgerBFT
   - BEAT: https://github.com/fififish/beat
 
